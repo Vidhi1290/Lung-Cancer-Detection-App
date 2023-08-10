@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Detection App</title>
+</head>
+<body>
+    <h1>Lung Cancer Detection App</h1>
+    <form method="post" action="/predict">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br><br>
+        
+        <select name="smokes" required>
+            <option value="0">Never</option>
+            <option value="1">Former</option>
+            <option value="2">Current</option>
+        </select>
+        <!-- Repeat the same pattern for the 'areaq' dropdown -->
+        <select name="areaq" required>
+            <option value="0">A</option>
+            <option value="1">B</option>
+            <option value="2">C</option>
+        </select>
+        
+        
+        <label for="alkhol">Alcohol Consumption:</label>
+        <input type="number" name="alkhol" step="0.1" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
