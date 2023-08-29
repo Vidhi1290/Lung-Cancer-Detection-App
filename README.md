@@ -41,5 +41,8 @@ rf_classifier.fit(X_train, y_train)
 # Making predictions and evaluating the model
 y_pred = rf_classifier.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
-print(f'Accuracy: {accuracy:.2f}')
+print(f'Accuracy: {accuracy:.2f}') ```python
+
+🚀 Join us on this journey to enhance medical diagnostics using machine learning. Feel free to explore our code, contribute, and provide feedback! 🤝👩‍💻👨‍💻
+
 
